@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1b1b">
+  <title>Robloxington 2016 · Web Client Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">R</span><div><strong>ROBLOXINGTON</strong><small>2016 WEB CLIENT · PROTOTYPE</small></div></div>
+    <span class="status"><i></i> LOCAL PREVIEW</span>
+  </header>
+  <main>
+    <section class="viewport-panel">
+      <div class="viewport-heading"><div><span class="eyebrow">WORLD VIEW</span><h1>Browser client prototype</h1></div><span class="pill">ENGINE NOT CONNECTED</span></div>
+      <canvas id="world" aria-label="Prototype 3D world view"></canvas>
+      <div class="viewport-footer"><span id="coordinates">Camera: 0, 6, 18</span><span>WASD / arrow keys · prototype controls</span></div>
+    </section>
+    <aside class="side-panel">
+      <span class="eyebrow">SESSION</span><h2>Ready when you are.</h2>
+      <p>This is the first browser-side shell, not the original Roblox client running in a tab. Networking and the game engine have not been ported yet.</p>
+      <label for="playerName">Player name</label><input id="playerName" maxlength="20" value="Guest" autocomplete="off">
+      <button id="previewButton" type="button">Start local preview</button>
+      <div class="info-box"><strong>Current state</strong><span id="sessionState">Waiting for local preview</span></div>
+      <div class="info-box"><strong>Next blocker</strong><span>Map the 2016 client protocol and engine dependencies.</span></div>
+    </aside>
+  </main>
+  <footer class="page-footer">Robloxington 2016 · community source project · experimental browser UI</footer>
+  <script src="app.js"></script>
+</body>
+</html>
